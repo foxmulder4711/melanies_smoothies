@@ -22,7 +22,7 @@ st.write(
 
 #st.write("You selected:", selected_value)
 
-cnx = st.connection("snwoflake")
+cnx = st.connection("snowflake")
 session = cnx.session()
 
 my_dataframe = session.table("smoothies.public.fruit_options").select(col('FRUIT_NAME'))
